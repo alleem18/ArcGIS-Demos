@@ -21,6 +21,16 @@ The purpose of this project is to demonstrate:
 
 ##  Directory Structure
 
+├── Configuration.ps1
+├── Licenses
+│   └── server.lic
+├── Modules
+│   └── MockArcGIS
+│       ├── DSCResources
+│       │   └── ArcGIS_Server
+│       ├── MockArcGIS.psd1
+│       └── MockArcGIS.psm1
+└── README.md
 
 
 ---
@@ -43,6 +53,7 @@ The `Test-TargetResource` function checks whether the resource is already applie
 if (Test-Path "$InstallDir\install.log") {
     return $true  # Resource is in desired state
 }
+```
 
 This ensures `Set-TargetResource` runs only when needed.
 
