@@ -52,7 +52,7 @@ This ensures `Set-TargetResource` runs only when needed.
 
  **Screenshot 2**: Second `Start-DscConfiguration` run showing no changes applied
 
- ![Second-time](images/Second.png)
+ ![Second-time](Images/Second.png)
 
 
 Manually deleting logs and rerunning `Start-DscConfiguration` results in a fresh installation. In a production environment, this is automated
