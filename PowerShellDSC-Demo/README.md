@@ -21,16 +21,7 @@ The purpose of this project is to demonstrate:
 
 ##  Directory Structure
 
-├── Configuration.ps1
-├── Licenses
-│   └── server.lic
-├── Modules
-│   └── MockArcGIS
-│       ├── DSCResources
-│       │   └── ArcGIS_Server
-│       ├── MockArcGIS.psd1
-│       └── MockArcGIS.psm1
-└── README.md
+![Directory Structure](images/screenshot1.png)
 
 
 ---
@@ -42,6 +33,8 @@ The purpose of this project is to demonstrate:
 - Created only if not already present (DSC idempotency)
 
  **Screenshot 1:** PowerShell terminal showing first-time `Start-DscConfiguration` run creating `install.log`
+ ![First-time](images/screenshot1.png)
+
 
 ---
 
@@ -58,6 +51,16 @@ if (Test-Path "$InstallDir\install.log") {
 This ensures `Set-TargetResource` runs only when needed.
 
  **Screenshot 2**: Second `Start-DscConfiguration` run showing no changes applied
+
+ ![Second-time](images/screenshot1.png)
+
+
+Manually deleting logs and rerunning `Start-DscConfiguration` results in a fresh installation. In a production environment, this is automated
+
+**Screenshot 3**: Third `Start-DscConfiguration` run showing fresh installation
+ ![Third-time](images/screenshot1.png)
+
+
 
 ---
 
@@ -82,7 +85,7 @@ I began with Esri’s PowerShell DSC repo, but to simplify:
 | Scripts disabled                    | Set execution policy: `Set-ExecutionPolicy RemoteSigned`    |
 | `KeyParameterNotImplemented`        | Fixed by adding `NodeName` to `Get-TargetResource`          |
 
- **Screenshot 3**: Compilation failure error (optional — useful to show debugging effort)
+
 
 ---
 
@@ -94,7 +97,6 @@ Once completed, the following happened:
 - `install.log` created if missing
 - Re-running the script skipped the install logic as expected
 
-**Screenshot 4**: Directory tree showing `install.log`, `ArcGISServerConfig`, and mock module
 
 ---
 
