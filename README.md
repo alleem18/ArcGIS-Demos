@@ -17,7 +17,7 @@ This repository contains basic  mock implementations of configuration automation
 - Simulates install behavior via file creation (`install.log`)
 - Demonstrates idempotency and resource modeling
 
--> [View Demo →](./PowerShellDSC-Demo)
+-> [PowerShellDSC-Demo README ](./PowerShellDSC-Demo)
 
 ---
 
@@ -27,7 +27,7 @@ This repository contains basic  mock implementations of configuration automation
 - Uses attributes, recipes, templates, and mock logic
 - Easily extendable for real environments
 
--> [View Demo →](./Chef-Demo)
+-> [Chef-Demo README](./Chef-Demo)
 
 ---
 
