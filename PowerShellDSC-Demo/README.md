@@ -110,12 +110,13 @@ Once completed, the following happened:
 
 
 # Open PowerShell as Administrator
+```
 cd PowerShellDSC-Demo
 Import-Module ./Modules/MockArcGIS/MockArcGIS.psd1 -Force
 .\Configuration.ps1
 Start-DscConfiguration -Path .\ArcGISServerConfig -Wait -Verbose -Force
 
-
+```
 
 
 ---
