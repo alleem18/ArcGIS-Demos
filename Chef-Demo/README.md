@@ -45,7 +45,7 @@ The recipe checks for the existence of `install.log`:
 unless ::File.exist?("#{install_dir}/install.log")
   # perform installation tasks
 end
-
+```
 
 
 
@@ -113,6 +113,7 @@ cd Chef-Demo
 # Run chef in local mode using JSON attributes
 sudo chef-client -z -j config/server.json -o mock_arcgis::install_server
 
+```
 
 
 
