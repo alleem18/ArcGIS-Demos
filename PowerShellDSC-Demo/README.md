@@ -21,7 +21,7 @@ The purpose of this project is to demonstrate:
 
 ##  Directory Structure
 
-![Directory Structure](images/screenshot1.png)
+![Directory Structure](Images/structure.png)
 
 
 ---
@@ -33,7 +33,7 @@ The purpose of this project is to demonstrate:
 - Created only if not already present (DSC idempotency)
 
  **Screenshot 1:** PowerShell terminal showing first-time `Start-DscConfiguration` run creating `install.log`
- ![First-time](images/screenshot1.png)
+ ![First-time](Images/First.png)
 
 
 ---
@@ -52,13 +52,13 @@ This ensures `Set-TargetResource` runs only when needed.
 
  **Screenshot 2**: Second `Start-DscConfiguration` run showing no changes applied
 
- ![Second-time](images/screenshot1.png)
+ ![Second-time](images/Second.png)
 
 
 Manually deleting logs and rerunning `Start-DscConfiguration` results in a fresh installation. In a production environment, this is automated
 
 **Screenshot 3**: Third `Start-DscConfiguration` run showing fresh installation
- ![Third-time](images/screenshot1.png)
+ ![Third-time](Images/Third.png)
 
 
 
