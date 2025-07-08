@@ -1,0 +1,10 @@
+[ClassVersion("1.0.0.0"), FriendlyName("ArcGIS_Server")]
+class ArcGIS_Server : OMI_BaseResource
+{
+    [Key] String NodeName;
+    [Required] String InstallDir;
+    [Required] String LicenseFilePath;
+    [Required] String LogsDirectory;
+    [Required] String AdminUsername;
+    [Required] String AdminPassword;
+};
