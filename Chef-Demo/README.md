@@ -17,7 +17,7 @@ This project simulates how Esri automates **ArcGIS Enterprise deployments using 
 ---
 
 ##  Directory Structure
- ![Directory Structure](images/screenshot1.png)
+ ![Directory Structure](Images/Structure.png)
 
 
 
@@ -36,7 +36,7 @@ The `install_server.rb` recipe does the following:
 
 **Screenshot 1:** First Chef run output showing installation steps and creation of log file
 
- ![First-time](images/screenshot1.png)
+ ![First-time](Images/First.png)
 
 
 ---
@@ -57,11 +57,11 @@ This ensures **Chef converges only once** — following the same model as real A
 
 **Screenshot 2:** Second `chef-client` run showing “up-to-date” resources (no actions taken)
 
- ![Second-time](images/screenshot1.png)
+ ![Second-time](Images/Second.png)
 
 Manually removing the logs and rerunning shows that there is a fresh installation and in production environment, this is automated
 
- ![Third-time](images/screenshot1.png)
+ ![Third-time](Images/Third.png)
 
 
 ---
