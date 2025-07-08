@@ -1,4 +1,4 @@
-﻿# ArcGIS Configuration Automation Demos
+﻿# ArcGIS Mock Configuration Automation Demos
 
 This repository contains basic  mock implementations of configuration automation for **ArcGIS Enterprise**, built using:
 
