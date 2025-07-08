@@ -17,6 +17,7 @@ This project simulates how Esri automates **ArcGIS Enterprise deployments using 
 ---
 
 ##  Directory Structure
+ ![Directory Structure](images/screenshot1.png)
 
 
 
@@ -35,6 +36,9 @@ The `install_server.rb` recipe does the following:
 
 **Screenshot 1:** First Chef run output showing installation steps and creation of log file
 
+ ![First-time](images/screenshot1.png)
+
+
 ---
 
 ##  Idempotency Demonstration
@@ -52,6 +56,13 @@ end
 This ensures **Chef converges only once** — following the same model as real ArcGIS automation.
 
 **Screenshot 2:** Second `chef-client` run showing “up-to-date” resources (no actions taken)
+
+ ![Second-time](images/screenshot1.png)
+
+Manually removing the logs and rerunning shows that there is a fresh installation and in production environment, this is automated
+
+ ![Third-time](images/screenshot1.png)
+
 
 ---
 
@@ -78,7 +89,7 @@ I used that as a reference to:
 | Path errors in recipe            | Used `Chef::Log` and `puts` for debugging                 |
 | VM networking / public access    | Kept everything local to the UTM Linux VM                 |
 
-**Screenshot 3:** Error from invalid `.deb` install (to show debugging initiative)
+
 
 ---
 
@@ -90,7 +101,7 @@ When completed, you’ll have:
 - Logged timestamp in `install.log`  
 - Demonstrated **Chef’s idempotency** with a second run  
 
-**Screenshot 4:** File system (`tree`) showing `/opt/arcgis-server` mock layout and `install.log`
+
 
 ---
 
